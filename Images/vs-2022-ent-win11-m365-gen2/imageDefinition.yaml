@@ -1,0 +1,7 @@
+$schema: 1.0
+name: win11-23h2-ent-cpc
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+tasks:
+    - name: choco
+      parameters:
+        package: notepadplusplus.install
