@@ -1,0 +1,7 @@
+$schema: 1.0
+name: ent-cpc-win11-21h2-ent-cpc-os
+image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-os
+tasks:
+    - name: choco
+      parameters:
+        package: notepadplusplus.install
