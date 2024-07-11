@@ -1,0 +1,7 @@
+$schema: 1.0
+name: vs-visualstudioplustools-vs-2022-ent-win10-m365-gen2
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win10-m365-gen2
+tasks:
+    - name: choco
+      parameters:
+        package: notepadplusplus.install

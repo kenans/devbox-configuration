@@ -1,0 +1,7 @@
+$schema: 1.0
+name: windows-ent-cpc-win10-21h2-ent-cpc-m365-g2
+image: microsoftwindowsdesktop_windows-ent-cpc_win10-21h2-ent-cpc-m365-g2
+tasks:
+    - name: choco
+      parameters:
+        package: notepadplusplus.install
