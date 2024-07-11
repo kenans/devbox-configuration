@@ -1,0 +1,7 @@
+$schema: 1.0
+name: vs2019plustools-vs-2019-ent-win11-m365-gen2
+image: microsoftvisualstudio_visualstudio2019plustools_vs-2019-ent-general-win11-m365-gen2
+tasks:
+    - name: choco
+      parameters:
+        package: notepadplusplus.install
