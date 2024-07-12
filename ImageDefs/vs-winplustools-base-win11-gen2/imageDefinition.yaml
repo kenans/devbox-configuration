@@ -1,0 +1,7 @@
+$schema: 1.0
+name: vs-winplustools-base-win11-gen2
+image: microsoftvisualstudio_winplustools_base-win11-gen2
+tasks:
+    - name: choco
+      parameters:
+        package: notepadplusplus.install
