@@ -5,3 +5,10 @@ tasks:
     - name: choco
       parameters:
         package: notepadplusplus.install
+    - name: quickstart/powershell    
+      parameters:      
+        command: "Write-Host $env:PATH"
+userTasks:
+    - name: quickstart/powershell    
+      parameters:      
+        command: "Write-Host $env:PATH"
