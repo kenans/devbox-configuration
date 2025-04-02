@@ -13,6 +13,9 @@ tasks:
   - name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
+  - name: ~/winget
+    parameters:
+      package: "Git.Git"
 userTasks:
   - name: quickstart/powershell
     parameters:
