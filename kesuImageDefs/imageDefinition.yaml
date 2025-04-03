@@ -4,19 +4,28 @@ image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
 buildProperties:
   networkConnection: japaneast-native
 tasks:
-  - name: choco
+  - displayName: nodepadplusplus
+    name: choco
     parameters:
       package: notepadplusplus.install
-  - name: powershell
+  - displayName: printName
+    name: powershell
     parameters:
       command: "Write-Host $(whoami) 123"
-  - name: ~/powershell
+  - displayName: printNamePrimitive
+    name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
-  - name: ~/winget
+  - displayName: git
+    name: ~/winget
     parameters:
       package: "Git.Git"
 userTasks:
-  - name: quickstart/powershell
+  - displayName: userPrintName
+    name: quickstart/powershell
     parameters:
       command: "Write-Host $(whoami)"
+  - displayName: userGit
+    name: ~/winget
+    parameters:
+      package: "Git.Git"
