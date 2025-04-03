@@ -2,28 +2,13 @@ $schema: 1.0
 name: kesu-default-win11-21h2-ent-nc-jp
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365
 tasks:
-  - displayName: nodepadplusplus
-    name: choco
-    parameters:
-      package: notepadplusplus.install
-  - displayName: printName
-    name: powershell
-    parameters:
-      command: "Write-Host $(whoami) 123"
-  - displayName: printNamePrimitive
-    name: ~/powershell
+  - name: ~/powershell
     parameters:
       command: "Write-Host $(whoami)"
-  - displayName: git
-    name: ~/winget
+  - name: ~/winget
     parameters:
       package: "Git.Git"
 userTasks:
-  - displayName: userPrintName
-    name: quickstart/powershell
-    parameters:
-      command: "Write-Host $(whoami)"
-  - displayName: userGit
-    name: ~/winget
+  - name: ~/winget
     parameters:
       package: "Git.Git"
